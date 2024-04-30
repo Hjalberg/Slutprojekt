@@ -1,52 +1,53 @@
 <!DOCTYPE html>
-<html lang="sv">
-  <!-- Grundläggande saker som att länka alla andra filer osv och får html att vara html -->
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Menu</title>
-    <!-- Länkar css och js -->
+    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js" differ></script>
   </head>
   <body>
-    <!-- Skapar diven för navbaren! -->
-    <div class="navbar" id="myNavbar">
-      <!-- Logga -->
-      <a href="#" class="logo"
-        ><img src="Bilder/Logga.png" alt="Logga" width="50" height="50"
-      /></a>
-      <!-- Skapar dom första nav alterenativen -->
-      <a href="#" class="active">Hem</a>
-      <a href="#">Om</a>
-      <a href="#">Tjänster</a>
-      <a href="#">priser</a>
-      <!-- Skapar resten av nav alternativen och dessa har bilder i -->
-      <div class="dropdown">
-        <div class="dropdown-content">
-          <!-- span är bara en ifyllad sak så att första a inte syns under 700px -->
-          <span></span>
-          <a href="#"
-            ><img src="Bilder/Email.png" alt="Email" height="25" width="25"
-          /></a>
-          <a href="#"
-            ><img
-              src="Bilder/Facebook.png"
-              alt="Facebook"
-              height="25"
-              width="25"
-          /></a>
-          <a href="#"
-            ><img
-              src="Bilder/Instagram.png"
-              alt="Instagram"
-              height="25"
-              width="25"
-          /></a>
-        </div>
-      </div>
-      <!-- Skapar knappen/Hamburger baren som man kan få ner sedan -->
-      <a href="#" class="icon" onclick="toggleMenu()"> &#9776; </a>
+    <header><h1>Recept bok</h1></header>
+    <div class="container">
+      <ul id="recept-lista" class="recept-lista">
+        <li class="recept-sak">
+          <img src="Bilder/Kakor.jpg" alt="Kakor" width="312" height="231" />
+          <h2>Kakor</h2>
+          <p>
+            <strong>ingridenser:</strong>
+            Ingridens 1 Ingridens 2 Ingridens 3
+          </p>
+          <a href="#">Se recept</a>
+        </li>
+        <li class="recept-sak">
+          <img
+            src="Bilder/chokladbollar.jpg"
+            alt="chokladbollar"
+            width="312"
+            height="231"
+          />
+          <h2>Chokladbollar</h2>
+          <p>
+            <strong>ingridenser:</strong>
+            Ingridens 1 Ingridens 2 Ingridens 3
+          </p>
+          <a href="#">Se recept</a>
+        </li>
+        <li class="recept-sak">
+          <img
+            src="Bilder/kollasnittar.jpg"
+            alt="kollasnittar"
+            width="312"
+            height="231"
+          />
+          <h2>Kollasnittar</h2>
+          <p>
+            <strong>ingridenser:</strong>
+            Ingridens 1 Ingridens 2 Ingridens 3
+          </p>
+          <a href="#">Se recept</a>
+        </li>
+      </ul>
     </div>
   </body>
 </html>
