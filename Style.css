@@ -1,9 +1,11 @@
+/* Sätter standard regeler för hela sidan */
 body{
 margin: 0;
 padding: 0;
 font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Sätter headern */
 header{
   background: #0c2461;
   color: #fff;
@@ -11,23 +13,27 @@ header{
   text-align: center;
 }
 
+/* Sätter headerns text */
 h1{
   margin: 0;
   font-size: 36px;
 }
 
+/* Sätter regler för hela sidan förutom headern */
 .container{
 margin: 0 auto;
 max-width: 1200px;
 padding: 20px;
 }
 
+/* Sätter regler över recept listan */
 .recept-lista{
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
+/* Sätter regeler över ett recept */
 .recept-sak{
 display: flex;
 align-items: center;
@@ -38,12 +44,14 @@ border-radius: 5px;
 overflow: hidden;
 }
 
+/* Sätter regler över recept bilden */
 .recept-sak img{
 width: 150px;
 height: 150px;
 object-fit: cover;
 }
 
+/* Sätter regler över recept titeln */
 .recept-sak h2{
   margin: 0;
   font-size: 20px;
@@ -52,6 +60,7 @@ object-fit: cover;
   margin-left: 30px;
 }
 
+/* Sätter regler över recept texten */
 .recept-sak p{
 margin: 0;
 padding: 10px;
@@ -59,6 +68,7 @@ font-size: 16px;
 color: #777;
 }
 
+/* Sätter regeler över recept knappen */
 .recept-sak a{
   background-color: #0c2461;
   color: #fff;
@@ -70,36 +80,31 @@ color: #777;
   transition: background 0.3s ease;
 }
 
-.recept-sak button{
-  background-color: #0c2461;
-  color: #fff;
-  min-width: 150px;
-  padding: 10px;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 14px;
-  transition: background 0.3s ease;
-}
-
+/* Sätter regler över knappen när någon håller över den */
 .recept-sak a:hover{
   background: #1e3799;
 }
 
+/* Sätter regler över hemsidan när den är på mobilen */
 @media screen and (max-width: 768px){
+  /* Minskar hela sidan med 10% */
   .container{
     max-width: 90%;
   }
 
+  /* ändrar flex box till wrap*/
   .recept-sak {
-flex-wrap: wrap;
+  flex-wrap: wrap;
   }
 
+  /* ändrar img till större storlet */
   .recept-sak img{
     width: 100%;
     height: auto;
     margin-bottom: 10px;
   }
 
+  /* ändrar text storlekten*/
   .recept-sak h2{
     font-size: 20px;
     padding: 0;
@@ -107,11 +112,13 @@ flex-wrap: wrap;
     margin-left: 10px;
   }
 
+  /* ändrar text storlek*/
   .recept-sak p{
     font-size: 14px;
     margin-bottom: 10px;
   }
 
+  /* ändrar knappen*/
   .recept-sak a{
     width: 100%;
     text-align: center;
